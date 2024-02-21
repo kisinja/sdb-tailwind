@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<style>
+
+    img{
+        display: none;
+    }
+
+    @media screen and (max-width:600px) {
+        .testimonial {
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        img{
+            display: block;
+        }
+
+        .border-4 p {
+            font-size: 14px;
+        }
+
+        .values {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .values div p {
+            font-size: 14px;
+        }
+
+        .nav-list {
+            display: none;
+        }
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .show-menu {
+        display: block;
+
+    }
+</style>
+
+<body class="bg-red-100">
+    <header class="" style="position: relative;">
+        <nav class="flex justify-between bg-teal-300 p-3" style="position: relative;">
+            <div class="">
+                <a href="#">Home</a>
+            </div>
+            <div class="">
+                <ul class="nav-list flex gap-4">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+            <img src="../images/menu.png" width="30px" style="cursor: pointer;" alt="">
+        </nav>
+
+        <div class="list bg-black">
+            <ul class="menu-list flex gap-5 text-white justify-center">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container flex flex-col gap-8">
+
+        <div class="text-center">
+            <h1 class="font-bold font-mono text-3xl">SDB BOOTCAMP</h1>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, <br> dolore. Laboriosam,
+                neque
+                iure perspiciatis <br> laudantium perferendis ipsam sint porro sequi molestias,</p>
+        </div>
+
+
+
+        <div class="columns-3 values">
+            <div class="">
+                <h3 class="font-bold">Mission</h3>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium nam, assumenda ipsam
+                    commodi laudantium sequi dignissimos eius exercitationem beatae architecto animi sint optio laborum
+                    consequatur voluptatum unde voluptatibus. Itaque cumque nesciunt, ullam quas et alias fuga ea
+                    voluptate eos ipsam dolorum suscipit recusandae error officia obcaecati, maxime non nam.</p>
+            </div>
+            <div class="">
+                <h3 class="font-bold">Vission</h3>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium nam, assumenda ipsam
+                    commodi laudantium sequi dignissimos eius exercitationem beatae architecto animi sint optio laborum
+                    consequatur voluptatum unde voluptatibus. Itaque cumque nesciunt, ullam quas et alias fuga ea
+                    voluptate eos ipsam dolorum suscipit recusandae error officia obcaecati, maxime non nam.</p>
+            </div>
+            <div class="mt-8">
+                <h3 class="font-bold">Values</h3>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium nam, assumenda ipsam
+                    commodi laudantium sequi dignissimos eius exercitationem beatae architecto animi sint optio laborum
+                    consequatur voluptatum unde voluptatibus. Itaque cumque nesciunt, ullam quas et alias fuga ea
+                    voluptate eos ipsam dolorum suscipit recusandae error officia obcaecati, maxime non nam.</p>
+            </div>
+        </div>
+
+        <div class="testimonial flex gap-5 justify-center">
+            <div class="border-4 border-blue-500 p-4 bg-teal-100">
+                <p>Pooja Dutt</p>
+                <p>This is where the message will live</p>
+            </div>
+            <div class="border-4 border-blue-500 p-4 bg-teal-100">
+                <p>Dennis Ivy</p>
+                <p>This is where the message will live</p>
+            </div>
+            <div class="border-4 border-blue-500 p-4 bg-teal-100">
+                <p>Telusko</p>
+                <p>This is where the message will live</p>
+            </div>
+            <div class="border-4 border-blue-500 p-4 bg-teal-100">
+                <p>Amigoscode</p>
+                <p>This is where the message will live</p>
+            </div>
+            <div class="border-4 border-blue-500 p-4 bg-teal-100">
+                <p>Traversy Media</p>
+                <p>This is where the message will live</p>
+            </div>
+            <div class="border-4 border-blue-500 p-4 bg-teal-100">
+                <p>Kevin Powell</p>
+                <p>This is where the message will live</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('img');
+        const list = document.querySelector('.menu-list');
+
+        menu.addEventListener('click', () => {
+            list.classList.toggle('show-menu');
+        });
+    </script>
+
+</body>
+
+</html>
